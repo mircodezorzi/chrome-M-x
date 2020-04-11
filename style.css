@@ -1,4 +1,4 @@
-#modal {
+ #dswitch {
   background-color: rgba(0, 0, 0, 0.4);
 
   display: none;
@@ -12,12 +12,13 @@
   overflow: auto;
 }
 
-#modal-content {
-  background-color: #1D1F21;
-  border: 1px solid #C5C8C6;
-  color: #C5C8C6;
+#dswitch #dswitch-content {
+  background-color: #F5F5F5;
+  border: 1px solid #303030;
+  color: #303030;
 
   font-size: 20px;
+  overflow: hidden;
 
   margin: auto;
   padding: 20px;
@@ -25,23 +26,49 @@
   height: 80%;
 }
 
-#modal-input {
-  background-color: #1D1F21;
+#dswitch #dswitch-content #dswitch-input {
+  background-color: #F5F5F5;
   border: none;
-  color: #C5C8C6;
+  border-bottom: 2px dashed #303030;
+  color: #303030;
+  font-weight: bold;
+
+  margin-bottom: 15px;
 
   width: 100%;
 }
 
-#modal-input:focus {
+#dswitch #dswitch-content #dswitch-input:focus {
   outline: none;
 }
 
-#modal-ul li {
+#dswitch #dswitch-content #dswitch-ul {
+  list-style: none
+}
+
+#dswitch #dswitch-content li {
+  overflow: hidden;
+}
+#dswitch #dswitch-content li img {
+  width: 15px;
+  margin-right: 15px;
+}
+
+#dswitch #dswitch-content .selected {
+  background-color: #6FC2EF;
+}
+
+.dswitch-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
-.selected {
-  background-color: #81A2BE;
-  color: #fff;
+.dswitch-url {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  color: #808080;
+  overflow: hidden;
 }
