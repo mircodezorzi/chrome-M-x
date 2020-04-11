@@ -1,0 +1,47 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#modal-content {
+  background-color: #1D1F21;
+  border: 1px solid #C5C8C6;
+  color: #C5C8C6;
+
+  font-size: 20px;
+
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+}
+
+#modal-input {
+  background-color: #1D1F21;
+  border: none;
+  color: #C5C8C6;
+
+  width: 100%;
+}
+
+#modal-input:focus {
+  outline: none;
+}
+
+#modal-ul li {
+  overflow: hidden;
+}
+
+.selected {
+  background-color: #81A2BE;
+  color: #fff;
+}

@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+
+  "name": "DSwitch",
+  "version": "0.1.1",
+  "description": "dmenu inspired tab switcher.",
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "web_accessible_resources": [
+    "modal.html"
+  ],
+
+  "content_scripts": [
+    {
+      "js": [ "content.js" ],
+      "css": [ "style.css" ],
+      "matches": [ "*://*/*" ]
+    }
+  ],
+
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  }
+
+}
