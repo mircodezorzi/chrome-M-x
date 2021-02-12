@@ -1,8 +1,8 @@
-chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (msg, _, sendResponse) {
 	switch (msg.text) {
 		case 'get_tabs':
 			chrome.tabs.getAllInWindow(
-				(tabs) => sendResponse(JSON.stringify(tabs))
+				tabs => sendResponse(JSON.stringify(tabs))
 			);
 			return true;
 		case 'switch_tab':

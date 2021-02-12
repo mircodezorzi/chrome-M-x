@@ -1,25 +1,25 @@
- #cmx {
-	background-color: rgba(0, 0, 0, 0.4);
-
+#cmx {
+	background-color: rgba(0, 0, 0, 0.3);
 	display: none;
-	position: fixed;
-	z-index: 9999999;
-	padding-top: 100px;
-	left: 0;
-	top: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
 	height: 100%;
-	width: 100%;
+	left: 0;
 	overflow: auto;
+	padding-top: 100px;
+	position: fixed;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	z-index: 9999999;
 }
+
 
 #cmx #cmx-content {
 	background-color: #1D1F21;
 	color: #C5C8C6;
-
-	font-size: 20px;
-	overflow: hidden;
-
 	margin: auto;
+	overflow: hidden;
 	padding: 20px;
 	width: 80%;
 }
@@ -29,14 +29,10 @@
 }
 
 #cmx #cmx-content #cmx-input {
+	all: unset;
 	background-color: #1D1F21;
-	color: #C5C8C6;
-
 	border: none;
-	font-weight: bold;
-
-	margin-bottom: 15px;
-
+	color: #C5C8C6;
 	width: 80%;
 }
 
@@ -59,6 +55,7 @@
 }
 #cmx #cmx-content li img {
 	width: 15px;
+	min-width: 15px;
 	margin-right: 15px;
 }
 
@@ -66,21 +63,21 @@
 	background-color: #282A2E;
 }
 
-#cmx #cmx-content .selected {
+#cmx #cmx-content .cmx-selected {
 	color: #F0C674;
 }
 
 .cmx-title {
+	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	overflow: hidden;
 }
 
 .cmx-url {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-
 	color: #808080;
 	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 10px;
+	display: inline;
 }

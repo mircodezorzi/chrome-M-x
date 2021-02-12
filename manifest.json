@@ -1,9 +1,8 @@
 {
-
 	"manifest_version": 2,
 
 	"name": "cmx",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "M-x inspired tab switcher.",
 
 	"permissions": [
@@ -17,7 +16,7 @@
 	"content_scripts": [
 		{
 			"matches": [ "*://*/*" ],
-			"js": [ "content.js" ],
+			"js": [ "cmx.js" ],
 			"css": [ "style.css" ]
 		}
 	],
@@ -26,5 +25,4 @@
 		"scripts": [ "background.js" ],
 		"persistent": false
 	}
-
 }
