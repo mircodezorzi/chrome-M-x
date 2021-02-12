@@ -1,3 +1,3 @@
-# dswitch
+# cmx
 
-dmenu inspired tab switcher
+M-x inspired tab switcher

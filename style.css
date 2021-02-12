@@ -1,74 +1,86 @@
- #dswitch {
-  background-color: rgba(0, 0, 0, 0.4);
+ #cmx {
+	background-color: rgba(0, 0, 0, 0.4);
 
-  display: none;
-  position: fixed;
-  z-index: 9999999;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+	display: none;
+	position: fixed;
+	z-index: 9999999;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
 }
 
-#dswitch #dswitch-content {
-  background-color: #F5F5F5;
-  border: 1px solid #303030;
-  color: #303030;
+#cmx #cmx-content {
+	background-color: #1D1F21;
+	color: #C5C8C6;
 
-  font-size: 20px;
-  overflow: hidden;
+	font-size: 20px;
+	overflow: hidden;
 
-  margin: auto;
-  padding: 20px;
-  width: 80%;
-  height: 80%;
+	margin: auto;
+	padding: 20px;
+	width: 80%;
 }
 
-#dswitch #dswitch-content #dswitch-input {
-  background-color: #F5F5F5;
-  border: none;
-  border-bottom: 2px dashed #303030;
-  color: #303030;
-  font-weight: bold;
-
-  margin-bottom: 15px;
-
-  width: 100%;
+#cmx #cmx-content #cmx-count {
+	display: inline;
 }
 
-#dswitch #dswitch-content #dswitch-input:focus {
-  outline: none;
+#cmx #cmx-content #cmx-input {
+	background-color: #1D1F21;
+	color: #C5C8C6;
+
+	border: none;
+	font-weight: bold;
+
+	margin-bottom: 15px;
+
+	width: 80%;
 }
 
-#dswitch #dswitch-content #dswitch-ul {
-  list-style: none
+#cmx #cmx-content #cmx-container {
+	width: 100%;
+	border-bottom: 1px solid #303030;
 }
 
-#dswitch #dswitch-content li {
-  overflow: hidden;
-}
-#dswitch #dswitch-content li img {
-  width: 15px;
-  margin-right: 15px;
+#cmx #cmx-content #cmx-input:focus {
+	outline: none;
 }
 
-#dswitch #dswitch-content .selected {
-  background-color: #6FC2EF;
+#cmx #cmx-content #cmx-ul {
+	list-style: none;
+	overflow-y: hidden;
 }
 
-.dswitch-title {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+#cmx #cmx-content li {
+	overflow: hidden;
+}
+#cmx #cmx-content li img {
+	width: 15px;
+	margin-right: 15px;
 }
 
-.dswitch-url {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+#cmx #cmx-content li:hover {
+	background-color: #282A2E;
+}
 
-  color: #808080;
-  overflow: hidden;
+#cmx #cmx-content .selected {
+	color: #F0C674;
+}
+
+.cmx-title {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.cmx-url {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	color: #808080;
+	overflow: hidden;
 }

@@ -1,30 +1,30 @@
 {
 
-  "manifest_version": 2,
+	"manifest_version": 2,
 
-  "name": "dswitch",
-  "version": "0.1.3",
-  "description": "dmenu inspired tab switcher.",
+	"name": "cmx",
+	"version": "0.2.0",
+	"description": "M-x inspired tab switcher.",
 
-  "permissions": [
-    "tabs"
-  ],
+	"permissions": [
+		"tabs"
+	],
 
-  "web_accessible_resources": [
-    "modal.html"
-  ],
+	"web_accessible_resources": [
+		"modal.html"
+	],
 
-  "content_scripts": [
-    {
-      "matches": [ "*://*/*" ],
-      "js": [ "content.js" ],
-      "css": [ "style.css" ]
-    }
-  ],
+	"content_scripts": [
+		{
+			"matches": [ "*://*/*" ],
+			"js": [ "content.js" ],
+			"css": [ "style.css" ]
+		}
+	],
 
-  "background": {
-    "scripts": [ "background.js" ],
-    "persistent": false
-  }
+	"background": {
+		"scripts": [ "background.js" ],
+		"persistent": false
+	}
 
 }
